@@ -1,47 +1,21 @@
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import Button from "../components/Button";
-import image2 from "../public/image2.png"
 import undraw from "../public/undraw.png"
 
 export default function Home() {
-  return <div>
-    <span className="flex justify-center py-4 text-xl gap-4">Choose Language:
-      <select id="lang" className="bg-inherit border-b-2 border-black w-40 text-center">
-        <option value="english">English</option>
-        <option value="burmese">Burmese</option>
-        <option value="chinese">Chinese</option>
-        <option value="polish">Polish</option>
-      </select>
-    </span>
+  const router = useRouter()
 
-    <div className="my-20 flex flex-col gap-10 items-center">
-      <p className="text-center w-[24rem] text-xl">For children to continue learning
-        through supportive relationships with
-        mentors who care.
-      </p>
-      <p className="text-center w-[18rem] font-bold">There are 40 million refugee children around the world who have had their educations disrupted. XXX pairs students with life-long mentors to continue their learning journey.
-      </p>
-
-      <Button btnText="Start here" />
+  return <div className="flex flex-col items-center">
+    <div className="text-5xl font-bold text-center flex flex-col items-center mt-[10rem] mb-14 space-y-2">
+      <h2>Welcome to</h2>
+      <h2 className="text-[#F9A826]">MentorEd</h2>
     </div>
-
-    <div className="flex flex-col items-center gap-4">
-      <h3 className="text-lg font-bold">Student in need of mentors</h3>
-      <Image src={image2} alt=""></Image>
-      <div className="flex gap-5">
-        <button className="border-[0.2rem] font-bold border-black py-5 px-6 rounded-xl text-left flex flex-col active:bg-yellow-300">
-          <span>Community</span>
-          <span>Forum</span>
-        </button>
-        <button className="border-[0.2rem] font-bold border-black py-5 px-6 rounded-xl text-left flex flex-col active:bg-yellow-300">
-          <span>Resource</span>
-          <span>Library</span>
-        </button>
-      </div>
-    </div>
-
-    <div className="flex justify-center w-full">
+    <p className="text-2xl w-[14rem] text-center font-bold">start learning with the community</p>
+    <div className="flex justify-center w-full mb-20">
       <Image src={undraw} alt=""></Image>
     </div>
-  </div>;
+    <Button btnText="Start here" handleClick={() => router.push("/about")} />
+  </div >;
 }
