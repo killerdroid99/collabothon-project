@@ -27,7 +27,7 @@ function LearningStage() {
         </div>
         <div onClick={() => dispatch({ type: "SECONDARY" })} className="w-full flex justify-center">
           <TextCard title="Secondary"
-            desc="(grade 10 and beyond)" selected={state.learningStage === "secondary"} />
+            desc="(grade 6-9)" selected={state.learningStage === "secondary"} />
         </div>
         <div onClick={() => dispatch({ type: "POST_SEC" })} className="w-full flex justify-center">
           <TextCard title="Post-Secondary"
