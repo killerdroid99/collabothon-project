@@ -24,24 +24,30 @@ export default function About() {
       <p className="text-center w-[18rem] font-bold">There are 40 million refugee children around the world who have had their educations disrupted. <span className="text-accent">MentorEd</span> pairs students with life-long mentors to continue their learning journey.
       </p>
 
-      <Button btnText="Continue" handleClick={() => router.push("/features")} />
+      <Button btnText="Continue" handleClick={() => router.push("/registration")} />
     </div>
 
     <div className="flex flex-col items-center gap-4">
       <h3 className="text-lg font-bold">Student in need of mentors</h3>
       <Image src={image2} alt=""></Image>
-      {/* <div className="flex gap-5">
-        <button className="border-[0.2rem] font-bold border-black py-5 px-6 rounded-xl text-left flex flex-col active:bg-yellow-300">
+    </div>
+
+    <div className="mt-20 mb-5 flex flex-col gap-10 items-center">
+      <p className="text-center w-[24rem] text-xl">MentorEd is an online platform to foster connections between the mentors and students by providing a platform to share.
+      </p>
+      <div className="flex gap-5">
+        <button className="border-[0.2rem] font-bold border-black py-6 px-5 rounded-xl text-left flex flex-col active:bg-yellow-300 ring-accent hover:ring-2">
           <span>Community</span>
           <span>Forum</span>
         </button>
-        <button className="border-[0.2rem] font-bold border-black py-5 px-6 rounded-xl text-left flex flex-col active:bg-yellow-300">
+        <button className="border-[0.2rem] font-bold border-black py-6 px-5 rounded-xl text-left flex flex-col active:bg-yellow-300 ring-accent hover:ring-2">
           <span>Resource</span>
           <span>Library</span>
         </button>
-      </div> */}
+      </div>
+      <p className="text-center w-[18rem] font-bold text-xl">
+        Explore the App Features
+      </p>
     </div>
-
-
   </div>;
 }
