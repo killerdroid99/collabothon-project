@@ -3,7 +3,7 @@ import settings from "../public/settings1.png"
 
 function StudentSettings() {
   return (
-    <div className='absolute top-6 right-4 flex gap-1 items-center'>
+    <div className='absolute top-6 right-6 flex gap-1 items-center'>
       <div className='flex flex-col items-end'>
         <h4 className='font-bold text-md  border-black'>STUDENT</h4>
         <p className='text-xs'>Settings</p>
