@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../components/Button";
 import image2 from "../public/image2.png"
 import undraw from "../public/undraw.png"
 
@@ -21,18 +22,18 @@ export default function Home() {
       <p className="text-center w-[18rem] font-bold">There are 40 million refugee children around the world who have had their educations disrupted. XXX pairs students with life-long mentors to continue their learning journey.
       </p>
 
-      <button className="bg-black text-white w-fit py-2 px-4 font-bold">Start here</button>
+      <Button btnText="Start here" />
     </div>
 
     <div className="flex flex-col items-center gap-4">
       <h3 className="text-lg font-bold">Student in need of mentors</h3>
       <Image src={image2} alt=""></Image>
       <div className="flex gap-5">
-        <button className="border-[0.2rem] font-bold border-black py-5 px-6 rounded-xl text-left flex flex-col">
+        <button className="border-[0.2rem] font-bold border-black py-5 px-6 rounded-xl text-left flex flex-col active:bg-yellow-300">
           <span>Community</span>
           <span>Forum</span>
         </button>
-        <button className="border-[0.2rem] font-bold border-black py-5 px-6 rounded-xl text-left flex flex-col">
+        <button className="border-[0.2rem] font-bold border-black py-5 px-6 rounded-xl text-left flex flex-col active:bg-yellow-300">
           <span>Resource</span>
           <span>Library</span>
         </button>
