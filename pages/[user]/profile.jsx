@@ -8,7 +8,7 @@ import m1 from "../../public/Mentor1.png"
 import m2 from "../../public/Mentor2.png"
 
 function Profile() {
-  const { state, dispatch } = useContext(UserContext)
+  const { state } = useContext(UserContext)
   const router = useRouter()
   const handleClick = () => {
     if (state.email !== "" && state.email.includes("@")) {
@@ -17,7 +17,7 @@ function Profile() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="flex flex-col items-center gap-8 pb-5">
       <BackToHome />
       <div className="flex items-center gap-4 mt-12">
         <div>
@@ -87,7 +87,14 @@ function Profile() {
           </div>
         </div>
       </div>
-
+      <div className="space-y-3">
+        <h3 className="font-bold text-xl text-center w-full">SUBJECTS CHOSEN</h3>
+        {
+          state.subjects.map(sub => (
+            <div key={sub} className="py-1 px-2 bg-secondary border-2 border-black rounded-full text-center">{sub}</div>
+          ))
+        }
+      </div>
     </div>
   )
 }
