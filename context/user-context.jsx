@@ -29,6 +29,8 @@ const reducer = (state, action) => {
       return { ...state, learningStage: "post-secondary" }
     case "ADD_SUBJECTS":
       return { ...state, subjects: [...state.subjects, action.payload] }
+    case "REMOVE_SUBJECTS":
+      return { ...state, subjects: state.subjects.filter(sub => sub !== action.payload) }
     default:
       return state;
   }
