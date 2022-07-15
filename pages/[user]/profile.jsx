@@ -6,6 +6,7 @@ import Image from "next/image"
 import profile from "../../public/profile-student.png"
 import m1 from "../../public/Mentor1.png"
 import m2 from "../../public/Mentor2.png"
+import Menu from "../../components/Menu"
 
 function Profile() {
   const { state } = useContext(UserContext)
@@ -19,6 +20,7 @@ function Profile() {
   return (
     <div className="flex flex-col items-center gap-8 pb-5">
       <BackToHome />
+      <Menu />
       <div className="flex items-center gap-4 mt-12">
         <div>
           <Image src={profile} alt=""></Image>
@@ -26,8 +28,8 @@ function Profile() {
           <span className="text-xs">({state.category}, {state.learningStage})</span>
           <div className="p-1 text-sm cursor-pointer bg-black text-secondary rounded-full text-center">Edit Profile</div>
         </div>
-        <button className="rounded-full border-2 py-4 px-6 border-black">Following</button>
-        <button className="rounded-full border-2 py-4 px-6 border-black">Followers</button>
+        <button className="rounded-3xl border-2 py-4 px-6 border-black">Following <strong className="block">2</strong></button>
+        <button className="rounded-3xl border-2 py-4 px-6 border-black">Followers <strong className="block">0</strong></button>
       </div>
 
       <section className="max-w-[24rem] text-md grid grid-cols-2 gap-4">
