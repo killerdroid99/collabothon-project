@@ -1,9 +1,11 @@
 import { UserContext } from "../../../context/user-context"
 import { useContext } from 'react'
 import BackToHome from '../../../components/BackToHome'
+import { useRouter } from "next/router"
 
 function Subjects() {
   const { state, dispatch } = useContext(UserContext)
+  const router = useRouter()
 
   const handleSelect = (string) => {
     if (state.subjects.includes(string)) {
@@ -11,6 +13,12 @@ function Subjects() {
       dispatch({ type: "REMOVE_SUBJECTS", payload: string })
     } else {
       dispatch({ type: "ADD_SUBJECTS", payload: string })
+    }
+  }
+
+  const handleClick = () => {
+    if (state.subjects.length !== 0) {
+      router.push("/registration/learner/email")
     }
   }
   return (
@@ -72,7 +80,7 @@ function Subjects() {
             onClick={() => handleSelect("Game Design")}
           >Game Design</div>
         </div>
-        <button className='p-2 bg-gray-300 text-lg font-bold px-10 rounded-xl hover:bg-gray-400 mt-6'>Next {'>'}</button>
+        <button className='p-2 bg-gray-300 text-lg font-bold px-10 rounded-xl hover:bg-gray-400 mt-6' onClick={handleClick}>Next {'>'}</button>
       </div>
     </div>
   )

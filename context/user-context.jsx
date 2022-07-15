@@ -31,6 +31,8 @@ const reducer = (state, action) => {
       return { ...state, subjects: [...state.subjects, action.payload] }
     case "REMOVE_SUBJECTS":
       return { ...state, subjects: state.subjects.filter(sub => sub !== action.payload) }
+    case "EMAIL":
+      return { ...state, email: action.payload }
     default:
       return state;
   }
