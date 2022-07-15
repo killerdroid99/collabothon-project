@@ -7,7 +7,7 @@ export default function Home() {
   const router = useRouter()
 
   return <div className="flex flex-col items-center">
-    <div className="text-5xl font-bold text-center flex flex-col items-center mt-[10rem] mb-14 space-y-2">
+    <div className="text-5xl font-bold text-center flex flex-col items-center mt-[6rem] mb-14 space-y-2">
       <h2>Welcome to</h2>
       <h2 className="text-[#F9A826]">MentorEd</h2>
     </div>

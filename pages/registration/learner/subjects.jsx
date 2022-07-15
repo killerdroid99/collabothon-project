@@ -32,51 +32,51 @@ function Subjects() {
         {state.subjects.length === 0 && <span className='absolute top-14 text-red-500'>Select atleast one</span>}
         <div className="grid grid-cols-3 gap-4">
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Psychology") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Psychology") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Psychology")}
           >Psychology</div>
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Maths") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Maths") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Maths")}
           >Maths</div>
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Science") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Science") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Science")}
           >Science</div>
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Language") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Language") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Language")}
           >Language</div>
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Engineering") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Engineering") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Engineering")}
           >Engineering</div>
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Poetry") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Poetry") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Poetry")}
           >Poetry</div>
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Finance") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Finance") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Finance")}
           >Finance</div>
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Geometry") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Geometry") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Geometry")}
           >Geometry</div>
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Accounting") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Accounting") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Accounting")}
           >Accounting</div>
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Data Science") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Data Science") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Data Science")}
           >Data Science</div>
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Programming") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Programming") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Programming")}
           >Programming</div>
           <div
-            className={`bg-secondary p-5 aspect-square w-28 rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Game Design") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
+            className={`bg-secondary aspect-square w-24 text-xs rounded-xl ring-accent hover:ring-4 cursor-pointer inline-flex items-center justify-center font-bold ${state.subjects.includes("Game Design") && "bg-emerald-500 text-primary hover:ring-red-500"}`}
             onClick={() => handleSelect("Game Design")}
           >Game Design</div>
         </div>

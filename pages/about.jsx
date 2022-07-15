@@ -7,7 +7,7 @@ export default function About() {
   const router = useRouter()
 
   return <div>
-    <span className="flex justify-center py-4 text-xl gap-4">Choose Language:
+    <span className="flex justify-center py-4 text-md gap-4">Choose Language:
       <select id="lang" className="bg-inherit border-b-2 border-black w-40 text-center">
         <option value="english">English</option>
         <option value="burmese">Burmese</option>
@@ -16,8 +16,8 @@ export default function About() {
       </select>
     </span>
 
-    <div className="mt-20 mb-5 flex flex-col gap-10 items-center">
-      <p className="text-center w-[24rem] text-xl">For children to continue learning
+    <div className="mt-10 mb-5 flex flex-col gap-10 items-center">
+      <p className="text-center w-[24rem] text-lg">For children to continue learning
         through supportive relationships with
         mentors who care.
       </p>
@@ -33,7 +33,7 @@ export default function About() {
     </div>
 
     <div className="mt-20 mb-5 flex flex-col gap-10 items-center">
-      <p className="text-center w-[24rem] text-xl">MentorEd is an online platform to foster connections between the mentors and students by providing a platform to share.
+      <p className="text-center w-[24rem] text-sm">MentorEd is an online platform to foster connections between the mentors and students by providing a platform to share.
       </p>
       <div className="flex gap-5">
         <button className="border-[0.2rem] font-bold border-black py-6 px-5 rounded-xl text-left flex flex-col active:bg-yellow-300 ring-accent hover:ring-2">

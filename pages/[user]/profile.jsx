@@ -22,17 +22,17 @@ function Profile() {
       <BackToHome />
       <Menu />
       <div className="flex items-center gap-4 mt-12">
-        <div>
+        <div className="w-32">
           <Image src={profile} alt=""></Image>
-          <h3 className="font-bold text-xl">STUDENT, {state.name.toUpperCase()}</h3>
+          <h3 className="font-bold text-md">STUDENT, {state.name.toUpperCase()}</h3>
           <span className="text-xs">({state.category}, {state.learningStage})</span>
-          <div className="p-1 text-sm cursor-pointer bg-black text-secondary rounded-full text-center">Edit Profile</div>
+          <div className="p-0.5 text-sm cursor-pointer bg-black text-secondary rounded-full text-center">Edit Profile</div>
         </div>
-        <button className="rounded-3xl border-2 py-4 px-6 border-black">Following <strong className="block">2</strong></button>
-        <button className="rounded-3xl border-2 py-4 px-6 border-black">Followers <strong className="block">0</strong></button>
+        <button className="rounded-3xl border-2 py-2 px-3 border-black">Following <strong className="block">2</strong></button>
+        <button className="rounded-3xl border-2 py-2 px-3 border-black">Followers <strong className="block">0</strong></button>
       </div>
 
-      <section className="max-w-[24rem] text-md grid grid-cols-2 gap-4">
+      <section className="max-w-[24rem] text-md grid grid-cols-2 gap-4 mx-6">
         <div>
           <span className="font-bold">Age :- </span>
           <p>??</p>
@@ -43,7 +43,7 @@ function Profile() {
         </div>
         <div className="col-span-2">
           <span className="font-bold">Bio :- </span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta perspiciatis ipsam repudiandae aut eligendi numquam odio corporis cumque. Aut incidunt dolores nemo laudantium ullam. Aliquid, eos. Optio, rem aperiam?</p>
+          <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta perspiciatis ipsam repudiandae aut eligendi numquam odio corporis cumque. Aut incidunt dolores nemo laudantium ullam. Aliquid, eos. Optio, rem aperiam?</p>
         </div>
       </section>
       <div className="flex flex-col">
@@ -55,7 +55,7 @@ function Profile() {
       </div>
       <div className="space-y-3">
         <h3 className="font-bold text-xl text-center w-full">COURSES IN PROGRESS </h3>
-        <div className="bg-secondary text-sm w-[26rem] rounded-xl overflow-hidden">
+        <div className="bg-secondary text-sm w-[20rem] rounded-xl overflow-hidden">
           <span className="flex justify-between bg-black text-secondary w-full px-6 py-1">
             <p>Lecture Name</p>
             <p>Lecturer</p>
@@ -63,10 +63,10 @@ function Profile() {
           <div className="px-8 py-4 relative">
             <p>Progress 0%</p>
             <span className="w-4/5 h-1 bg-white absolute top-10"> </span>
-            <button className="bg-black text-secondary rounded-full py-1 px-4 mt-5 ml-64">Continue</button>
+            <button className="bg-black text-secondary rounded-full py-0.5 px-4 mt-5 ml-40">Continue</button>
           </div>
         </div>
-        <div className="bg-secondary text-sm w-[26rem] rounded-xl overflow-hidden">
+        <div className="bg-secondary text-sm w-[20rem] rounded-xl overflow-hidden">
           <span className="flex justify-between bg-black text-secondary w-full px-6 py-1">
             <p>Lecture Name</p>
             <p>Lecturer</p>
@@ -74,10 +74,10 @@ function Profile() {
           <div className="px-8 py-4 relative">
             <p>Progress 0%</p>
             <span className="w-4/5 h-1 bg-white absolute top-10"> </span>
-            <button className="bg-black text-secondary rounded-full py-1 px-4 mt-5 ml-64">Continue</button>
+            <button className="bg-black text-secondary rounded-full py-0.5 px-4 mt-5 ml-40">Continue</button>
           </div>
         </div>
-        <div className="bg-secondary text-sm w-[26rem] rounded-xl overflow-hidden">
+        <div className="bg-secondary text-sm w-[20rem] rounded-xl overflow-hidden">
           <span className="flex justify-between bg-black text-secondary w-full px-6 py-1">
             <p>Lecture Name</p>
             <p>Lecturer</p>
@@ -85,7 +85,7 @@ function Profile() {
           <div className="px-8 py-4 relative">
             <p>Progress 0%</p>
             <span className="w-4/5 h-1 bg-white absolute top-10"> </span>
-            <button className="bg-black text-secondary rounded-full py-1 px-4 mt-5 ml-64">Continue</button>
+            <button className="bg-black text-secondary rounded-full py-0.5 px-4 mt-5 ml-40">Continue</button>
           </div>
         </div>
       </div>
